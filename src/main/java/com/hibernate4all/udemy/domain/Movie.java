@@ -4,16 +4,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
+@Data
 @Builder
-@EqualsAndHashCode
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 public class Movie {
 
     @Id
